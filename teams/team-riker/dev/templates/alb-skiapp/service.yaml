@@ -1,13 +1,15 @@
 apiVersion: v1
 kind: Service
-metadata:
+metadata: 
   name: skiapp-service
   namespace: team-riker
-spec:
-  ports:
-    - port: 80
-      targetPort: 8080
+spec: 
+  ports: 
+    - 
+      port: 80
       protocol: TCP
-  type: NodePort
-  selector:
+      targetPort: 8080
+  selector: 
     app: skiapp
+  type: NodePort
+  
